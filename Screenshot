@@ -1,0 +1,3 @@
+   ITakesScreenshot? screenshot = driver as ITakesScreenshot;
+            Screenshot screenshot1 = screenshot.GetScreenshot();
+            screenshot1.SaveAsFile("C://Users//OtteAnilKumar//Pictures//Screenshots//Speechtotextscshot//Img1.png", ScreenshotImageFormat.Png);

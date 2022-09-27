@@ -57,6 +57,7 @@ namespace Testproject.Terstingconceptes
             TestContext.Progress.WriteLine(driver.Url);
             //TestContext.Progress.WriteLine();
           //  driver.Quit();
+          driver.Close();
         }
     }
 

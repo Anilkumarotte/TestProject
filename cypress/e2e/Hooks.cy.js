@@ -24,8 +24,9 @@ describe('Smoke test', () =>
     {
       cy.get('#item_4_title_link > .inventory_item_name').click();
 
+     
 
-
+       
     }
     )
     it ('validate add to cart ', () =>
@@ -36,8 +37,31 @@ describe('Smoke test', () =>
 
     }
     )
+         it ('validate dropdown'  ,() =>
+         {
+             
+          cy.get('[data-test="product_sort_container"]').select('lohi')
 
 
+         })
+
+         it ('validate dropdown'  ,() =>
+         {
+             
+          cy.get('[data-test="product_sort_container"]').select('lohi')
+
+
+         })
+         
+         it('validate text ', () =>
+         {
+          cy.get(':nth-child(1) > .inventory_item_description > .inventory_item_label > .inventory_item_desc').find('div').then(function(e){
+            //method text to obtain text content
+            const t = e.text()
+            expect(t).to.contains('carry.allTheThings() with the sleek, streamlined Sly Pack that melds uncompromising style with unequaled laptop and tablet protection,,{matchCase:false}')
+          
+         }
+         )
 
      afterEach(function()
      {
@@ -47,9 +71,10 @@ describe('Smoke test', () =>
       
 
 
-   
-
+  
      })
+
+    })
 }
 
 )

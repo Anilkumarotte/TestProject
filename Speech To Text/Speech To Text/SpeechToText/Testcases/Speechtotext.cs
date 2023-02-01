@@ -16,9 +16,9 @@ namespace Speech_To_Text.SpeechToText.Testcases
 
             LoginPage Login = new LoginPage(driver);
             
-            Login.Username.SendKeys("okumar@ariqt.com");
+            Login.Username.SendKeys("******@gmail.com");
             Login.UsernameButton.Click();
-            Login.password.SendKeys("Karim@123");
+            Login.password.SendKeys("*******");
             Thread.Sleep(2000);
             Login.passwordButton.Click();
             Thread.Sleep(2000);

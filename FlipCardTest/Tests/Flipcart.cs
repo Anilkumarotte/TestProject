@@ -26,8 +26,8 @@ namespace FlipCart.Tests
         public void Test1()
         {
             Loginpage page = new Loginpage(driver);
-            page.Username.SendKeys("8374145735");
-            page.password.SendKeys("123@qwe");
+            page.Username.SendKeys("83******35");
+            page.password.SendKeys("1*******e");
             page.Button.Click();
         }
 

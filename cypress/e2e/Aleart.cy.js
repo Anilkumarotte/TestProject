@@ -7,6 +7,7 @@ describe('Tutorialspoint Test', function () {
      cy.get(':nth-child(1) > button').click()
      cy.on("window:alert", (t) => {
         expect(t).to.equal("I am a JS Alert");
+        
 
 
      });
@@ -30,11 +31,15 @@ describe('Tutorialspoint Test', function () {
       cy.visit("https://the-internet.herokuapp.com/javascript_alerts")
   
       
-      cy.on("window:alert", (t) => {
-        cy.get(':nth-child(3) > button').type('wieufeuifgui')
-        //expect(t).to.equal("I am a JS prompt");
-     
+      
+      cy.window().then(function($wind){
+         cy.stub($wind, 'prompt').returns('Hello')
+         cy.contains('Click for JS Prompt').click()
+      })
+
+        
       });
+      
     })
-    });
+    
  

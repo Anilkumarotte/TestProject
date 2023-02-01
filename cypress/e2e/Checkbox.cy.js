@@ -5,6 +5,8 @@ describe('Tutorialspoint', function () {
        cy.visit("https://accounts.google.com/signup")
        //checkbox with assertion
        cy.get('input[type="checkbox"]').check().should('be.checked')
+       cy.get('input[type="checkbox"]').uncheck();
+       cy.get('input[type="checkbox"]').should('have.length', 1)
        //identify checkbox with class with assertion
       // cy.get('.VfPpkd-muHVFf-bMcfAe').uncheck().should('not.be.checked')
     })

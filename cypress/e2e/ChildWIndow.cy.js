@@ -7,15 +7,13 @@ describe('Example to demonstrate the handling of new browser windows in cypress'
             .should('include', '/windows/new')
         cy.get('h3')
             .should('have.text', 'New Window')
+            cy.go('back')
     })
  
-    it('Handling new Browser Window', function () {
-        cy.visit('https://alapanme.github.io/testing-cypress.html')
-        cy.get('button').click()
-       cy.go('back')
- 
- 
-       })
+    
         
-          })
+    
+     })
  
+
+    

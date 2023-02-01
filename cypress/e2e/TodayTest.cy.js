@@ -1,6 +1,6 @@
-describe("testorg.cy.js", () => {
-it("tests testorg.cy.js", () => {
-  
+describe("TodayTest", () => {
+it("tests TodayTest", () => {
+
 
   cy.visit("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
 

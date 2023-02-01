@@ -17,7 +17,7 @@ namespace Speech_To_Text.SpeechToText.Testcases
         public void Setup()
         {
             driver= new ChromeDriver();
-            driver.Url= "https://speechtotextdashboard.azurewebsites.net/";
+            driver.Url= "https://**********.com/";
             driver.FindElement(By.ClassName("text-white")).Click();
             driver.Manage().Window.Maximize();
 

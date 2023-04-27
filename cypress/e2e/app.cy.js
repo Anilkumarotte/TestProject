@@ -9,7 +9,7 @@ describe('Smoke test', () =>
 {
     before(function(){
 
-        cy.visit("https://webscrapping-snelstart.azurewebsites.net/");
+        cy.visit("...................");
       })
 
       it("Validate login with valid creds", function () {
